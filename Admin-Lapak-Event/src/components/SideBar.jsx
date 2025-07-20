@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import dashboardIcon from "../assets/dashboard-sidebar-icon.svg";
 import dropdownIcon from "../assets/arrow-down.svg";
 import masterdata from "../assets/masterdata.svg";
-import gambar from "../img/gambar.png";
 
 const SideBar = () => {
   const location = useLocation();
