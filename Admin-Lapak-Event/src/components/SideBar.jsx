@@ -41,7 +41,7 @@ const SideBar = () => {
               <li
                 className={`py-1 pl-2 pr-1 text-white rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold cursor-pointer`}
                 onClick={handleDropdown}>
-                <img src="/assets/masterdata.png" className="w-4 " />
+                <img src="/assets/masterdata.svg" className="w-4 " />
                 Master Data
                 <i className="fa-solid fa-caret-down"></i>
               </li>
