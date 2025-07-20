@@ -74,7 +74,7 @@ const Kategori = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/kategori-1.png"
+                          src="/img/kategori-1.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -105,7 +105,7 @@ const Kategori = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/kategori-2.png"
+                          src="/img/kategori-2.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -136,7 +136,7 @@ const Kategori = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/kategori-3.png"
+                          src="/img/kategori-3.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -226,7 +226,7 @@ const Kategori = () => {
                             <i className="fa fa-close"></i>
                           </button>
                         </div>
-                        <img src="img/kategori-1.png" alt="Produk" />
+                        <img src="/img/kategori-1.png" alt="Produk" />
                       </div>
                       <div className="mt-4">
                         <label

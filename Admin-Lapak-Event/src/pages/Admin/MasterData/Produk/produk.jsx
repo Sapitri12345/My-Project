@@ -333,19 +333,19 @@ const Kategori = () => {
                           <button className="ml-40">
                             <i className="fa fa-close"></i>
                           </button>
-                          <img src="img/produk.png" alt="Produk" />
+                          <img src="/img/produk.png" alt="Produk" />
                         </div>
                         <div>
                           <button className="ml-40">
                             <i className="fa fa-close"></i>
                           </button>
-                          <img src="img/produk.png" alt="Produk" />
+                          <img src="/img/produk.png" alt="Produk" />
                         </div>
                         <div>
                           <button className="ml-40">
                             <i className="fa fa-close"></i>
                           </button>
-                          <img src="img/produk.png" alt="Produk" />
+                          <img src="/img/produk.png" alt="Produk" />
                         </div>
                       </div>
                       <div className="mt-4">
@@ -506,9 +506,9 @@ const Kategori = () => {
                         Portofolio
                       </label>
                       <div className="mt-2 grid grid-cols-3 gap-2">
-                        <img src="img/produk.png" alt="Produk" />
-                        <img src="img/produk.png" alt="Produk" />
-                        <img src="img/produk.png" alt="Produk" />
+                        <img src="/img/produk.png" alt="Produk" />
+                        <img src="/img/produk.png" alt="Produk" />
+                        <img src="/img/produk.png" alt="Produk" />
                       </div>
                     </div>
 

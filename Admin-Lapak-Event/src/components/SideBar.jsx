@@ -20,7 +20,7 @@ const SideBar = () => {
       <div id="sidebar-wrapper" className="h-screen text-white">
         <div title="profile" className="flex flex-col items-center mt-4">
           <div>
-            <img src="/img/gambar" className="rounded-full" />
+            <img src="/img/gambar.png" className="rounded-full" />
           </div>
           <h1>Dinda marli</h1>
           <h2>abilong@gmial.com</h2>
@@ -41,7 +41,7 @@ const SideBar = () => {
               <li
                 className={`py-1 pl-2 pr-1 text-white rounded w-full flex items-center justify-start gap-2 hover:bg-white hover:text-violet-500 font-semibold cursor-pointer`}
                 onClick={handleDropdown}>
-                <img src="/assets/masterdata" className="w-4 " />
+                <img src="/assets/masterdata.png" className="w-4 " />
                 Master Data
                 <i className="fa-solid fa-caret-down"></i>
               </li>

@@ -78,7 +78,7 @@ const Metode = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/bri.png"
+                          src="/img/bri.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -112,7 +112,7 @@ const Metode = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/bni.png"
+                          src="/img/bni.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -146,7 +146,7 @@ const Metode = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/bsi.png"
+                          src="/img/bsi.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -180,7 +180,7 @@ const Metode = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/mnd.png"
+                          src="/img/mnd.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -214,7 +214,7 @@ const Metode = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="img/bca.png"
+                          src="/img/bca.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -307,7 +307,7 @@ const Metode = () => {
                             <i className="fa fa-close"></i>
                           </button>
                         </div>
-                        <img src="img/bri.png" alt="Produk" />
+                        <img src="/img/bri.png" alt="Produk" />
                       </div>
                       <div className="mt-4">
                         <label
