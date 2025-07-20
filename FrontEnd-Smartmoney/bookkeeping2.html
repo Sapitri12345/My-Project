@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMARTMONEY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- linkgooglefont -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;700&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/44e15b7060.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .sidebar {
+        height: auto;
+    }
+
+    /* margin, padding keseluruhan page */
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    /* bagian foto background */
+    .main {
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("assets/konten7.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* bagian tulisan logo */
+    .logo {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 1%;
+        margin-bottom: 1%;
+        font-weight: bold;
+    }
+
+    /* bagian posisi tulisan navbar */
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    /* bagian editing tulisan navbar */
+    .navbar ul li a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    /* bagian icon */
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* bagian judul */
+    /* bagian judul */
+    .judul {
+        display: flex;
+        flex-direction: column;
+        /* Untuk menempatkan <h1> dan <p> secara vertikal */
+        align-items: flex-end;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 10%;
+        margin-top: 8%;
+        text-align: right;
+        /* Untuk mengatur teks ke kanan */
+    }
+
+    .judul h1 {
+        color: white;
+        display: flex;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50pt;
+        margin-right: 10%;
+        margin-top: 1%;
+        font-weight: bolder;
+    }
+
+    .button3 {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .klikButton {
+        color: white;
+        border: none;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .5s;
+        background-color: #203652;
+    }
+
+    .konten1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+        width: 85%;
+        margin: auto;
+        padding: 45px 0;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .konten2 {
+        margin-top: 3rem;
+    }
+
+    /* bagian footer */
+    .footer {
+        width: 100%;
+        margin-top: 5%;
+        background-color: #203652;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- bagian navbar & main background -->
+    <div class="main">
+        <div class="navbar">
+            <label class="logo">SMARTMONEY</label>
+            <ul>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="edukasi.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bookkeeping</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+            <div class="icon">
+                <a href="setting.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- bagian judul -->
+        <div class="judul">
+            <h1>Bookkeeping</h1>
+        </div>
+    </div>
+
+    <div class="konten1">
+        <h3>Pembelajaran secara instan</h3>
+        <h3>Mudah Diakses kapan pun dan dimanapun</h3>
+        <h3>Solusi yang tepat untuk anda</h3>
+    </div>
+
+    <!-- bagian chart -->
+    <div>
+        <div class="card  mt-5 mb-3">
+            <div class="card-header">
+                <h5>Grafik Pendapatan dan pengeluaran minggu ini</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="myChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="konten2">
+        <div class="container mb-6">
+            <div class="card text-center">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Uang Anda/Bulan</h5>
+                        </div>
+                        <div class="col">
+                            <h5>Rp. 2000.0000,00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p>Total Belanja</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp. 300.0000,00</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Hutang Saat Ini</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp. 200.0000,00</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Kebutuhan Mendesak</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp. 100.0000,00</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p><b>Sisa</b></p>
+                        </div>
+                        <div class="col">
+                            <p><b>Rp. 1.400.0000,00</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button3">
+        <div>
+            <a href="dashboard.html"><button class="klikButton">Lengkapi Data Anda ></button></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h5 class="card-title">SMARTMONEY<br> &copy; 2023 SmartMoney</h5>
+
+
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fa-brands fa-square-facebook" style="color: #7dc2d9;"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin" style="color: #7dc2d9;"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Chart Script -->
+    <script>
+        // Sample data for the chart
+        var data = {
+            labels: ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"],
+            datasets: [
+                {
+                    label: "Pendapatan",
+                    data: [500, 600, 700, 800, 900, 1000, 1100],
+                    borderColor: "rgba(75, 192, 192, 1)",
+                    backgroundColor: "rgba(75, 192, 192, 0.2)",
+                    borderWidth: 1
+                },
+                {
+                    label: "Pengeluaran",
+                    data: [200, 300, 400, 500, 600, 700, 800],
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    backgroundColor: "rgba(255, 99, 132, 0.2)",
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        // Get the chart canvas
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        // Create the chart
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <!-- /script boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

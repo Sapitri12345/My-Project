@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMARTMONEY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/44e15b7060.js" crossorigin="anonymous"></script>
+  <style>
+    /* margin, padding keseluruhan page */
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    /* bagian foto background */
+    .main {
+      width: 100%;
+      height: 700px;
+      background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("assets/home.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* bagian tulisan logo */
+    .logo {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 1%;
+      margin-bottom: 1%;
+      font-weight: bold;
+    }
+
+    /* bagian posisi tulisan navbar */
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    /* bagian editing tulisan navbar */
+    .navbar ul li a {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    /* bagian icon */
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* bagian judul */
+    /* bagian judul */
+    .judul {
+      display: flex;
+      flex-direction: column;
+      /* Untuk menempatkan <h1> dan <p> secara vertikal */
+      align-items: flex-end;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-right: 10%;
+      margin-top: 8%;
+      text-align: right;
+      /* Untuk mengatur teks ke kanan */
+    }
+
+    .judul h1 {
+      color: white;
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 50pt;
+      margin-right: 10%;
+      margin-top: 1%;
+      font-weight: bolder;
+    }
+
+    .katMateri {
+      margin-top: 10%;
+    }
+
+    .isi h1 {
+      font-size: 18pt;
+      margin-left: 3%;
+      font-weight: bold;
+      margin-left: 60px;
+      color: black;
+      margin-top: 20%;
+      font-weight: bolder;
+    }
+
+    .isi img {
+      flex: 1;
+      float: right;
+      margin-right: 5px;
+      margin-left: 50px;
+      margin-top: -10%;
+    }
+
+    /* format tulisan bagian isi */
+    .isi p {
+      font-size: 16pt;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 60px;
+      text-align: justify;
+      border: 1px solid none;
+      padding: 2px;
+      margin-right: 50px;
+      color: black;
+    }
+
+    .team h1 {
+      text-align: center;
+      font-size: 24pt;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+      margin-top: 20%;
+      margin-left: 7%;
+      font-weight: bolder;
+    }
+
+    .row img {
+      margin-top: 20%;
+      align-items: center;
+      margin-right: 1%;
+      gap: 200px;
+    }
+
+    .container p {
+      display: grid;
+      /* jgn dirubah; */
+      justify-content: center;
+      margin: 0 50px;
+      padding-left: 50%;
+      margin-right: 1%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 200px;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+    }
+
+    /* bagian footer */
+    .footer {
+      width: 100%;
+      margin-top: 5%;
+      background-color: #203652;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+
+<body>
+  <!-- bagian navbar & main background -->
+  <div class="main">
+    <div class="navbar">
+      <label class="logo">SMARTMONEY</label>
+      <ul>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="edukasi2.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookkeeping2.html">Bookkeeping</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+      <div class="icon">
+        <a href="setting.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- bagian judul -->
+    <div class="judul">
+      <h1>About</h1>
+    </div>
+  </div>
+
+  <!-- bagian kategori -->
+  <div class="isi">
+    <div class="katMateri">
+      <h1>Smartmoney</h1>
+      <div class="gambar-container">
+        <img src="assets/about1.png">
+      </div>
+      <div class="teks-container">
+        <p> Smartmoney merupakan website pengelolaan keuangan yang merujuk kepada uang pribadi anda. Dengan menggunakan
+          Smartmoney memudahkan anda dalam mengatur keuangan anda </p>
+      </div>
+    </div>
+
+
+    <div class="team">
+      <h1>team</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/najmi.png" alt="Gambar 1">
+            <p>Najmi </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/astrid.png" alt="Gambar 2">
+            <p>Astrid</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/zaki.png" alt="Gambar 3">
+            <p>Zaki </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/farhan.png" alt="Gambar 4">
+            <p>Farhan </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/putri.png" alt="Gambar 5">
+            <p>Putri</p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/sapitri.png" alt="Gambar 6">
+            <p>Sapitri</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <h5 class="card-title">SMARTMONEY<br> &copy; 2023 SmartMoney</h5>
+
+
+        <div class="social-icons">
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-square-facebook" style="color: #7dc2d9;"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fa-brands fa-linkedin" style="color: #7dc2d9;"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- /script boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

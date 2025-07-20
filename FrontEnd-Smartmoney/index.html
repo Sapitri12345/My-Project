@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMARTMONEY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/44e15b7060.js" crossorigin="anonymous"></script>
+  <style>
+    /* margin, padding keseluruhan page */
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    /* bagian foto background */
+    .main {
+      width: 100%;
+      height: 700px;
+      background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("assets/home.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* bagian tulisan logo */
+    .logo {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 1%;
+      margin-bottom: 1%;
+      font-weight: bold;
+    }
+
+    /* bagian posisi tulisan navbar */
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    /* bagian editing tulisan navbar */
+    .navbar ul li a {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .button1 {
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 30px;
+      transition: .5s;
+      background-color: #203652;
+    }
+
+    .button2 {
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 30px;
+      transition: .5s;
+      background-color: #203652;
+    }
+
+    /* bagian icon */
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* bagian judul */
+    /* bagian judul */
+    .judul {
+      display: flex;
+      flex-direction: column;
+      /* Untuk menempatkan <h1> dan <p> secara vertikal */
+      align-items: flex-end;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-right: 10%;
+      margin-top: 8%;
+      text-align: right;
+      /* Untuk mengatur teks ke kanan */
+    }
+
+    .judul h1 {
+      font-size: 50pt;
+      font-weight: bolder;
+    }
+
+    .judul p {
+      font-size: 20pt;
+      position: relative;
+    }
+
+    .klikButton {
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+      transition: .5s;
+      background-color: #203652;
+    }
+
+    .konten1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+      width: 85%;
+      margin: auto;
+      padding: 45px 0;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+    .konten2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gambar {
+      border-radius: 30px;
+      width: 500px;
+      height: 300px;
+    }
+
+    h2 {
+      font-weight: 1000;
+    }
+
+    .teks {
+      font-size: 18pt;
+      font-weight: 500;
+    }
+
+    .isikonten {
+      margin-bottom: 7rem;
+    }
+
+    .konten {
+      background-color: #203652;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin-bottom: 3rem;
+    }
+
+    .konten3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0.5%;
+    }
+
+    .poto1 {
+      width: 440px;
+      height: 360px;
+    }
+
+    .poto2 {
+      width: 450px;
+      height: 360px;
+    }
+
+    .poto3 {
+      width: 450px;
+      height: 360px;
+    }
+
+    .konten3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .poto4 {
+      width: 440px;
+      height: 360px;
+    }
+
+    .poto5 {
+      width: 450px;
+      height: 360px;
+    }
+
+    .poto6 {
+      width: 450px;
+      height: 360px;
+    }
+
+    .kata {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 3rem;
+      font-weight: 1000;
+    }
+
+    .footer {
+      width: 100%;
+      margin-top: 5%;
+      background-color: #203652;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+
+<body>
+  <!-- bagian navbar & main background -->
+  <div class="main">
+    <div class="navbar">
+      <label class="logo">SMARTMONEY</label>
+      <ul>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="edukasi.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookkeeping.html">Bookkeeping</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+      <div class="button">
+        <a href="login.html"><button class="button1">Login</button></a>
+        <a href="register.html"><button class="button2">SignUp</button></a>
+      </div>
+      <div class="icon">
+        <a href="setting.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- bagian judul -->
+    <div class="judul">
+      <h1>Selamat Datang</h1>
+      <p>Kami hadir untuk membantu Anda mengelola keuangan pribadi Anda dengan lebih efektif dan cerdas. Yuk
+        kujnjungi
+        website kami</p>
+      <a href="login.html"><button class="klikButton">Lengkapi Data Diri Anda ></button></a>
+    </div>
+  </div>
+
+  <div class="konten1">
+    <h3>Pembelajaran secara instan</h3>
+    <h3>Mudah Diakses kapan pun dan dimanapun</h3>
+    <h3>Solusi yang tepat untuk anda</h3>
+  </div>
+
+  <div class="konten2">
+    <div class="isikonten">
+      <div class="container text-left">
+        <div class="row align-items-center">
+          <div class="col">
+            <img class="gambar" src="assets/konten1.jpeg" alt="">
+          </div>
+          <div class="col">  
+            <h2>Menjadikan Keuangan Anda Stabil</h2>
+            <p class="teks">Penggunaan webite ini akan membantu anda untuk mengatur pengelolaan keuangan
+              anda menjadi
+              lebih teratur dan
+              stabil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="isikonten">
+      <div class="container text-left">
+        <div class="row align-items-center">
+          <div class="col">
+            <h2>Menghemat Uang Anda dengan Cerdas</h2>
+            <p class="teks">Penghematan sangat penting loh, terutama yang memang punya riwayat boros, jadi
+              bakal ngebantu banget</p>
+          </div>
+          <div class="col">
+            <img class="gambar" src="assets/konten2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="isikonten">
+      <div class="container text-left">
+        <div class="row align-items-center">
+          <div class="col">
+            <img class="gambar" src="assets/konten3.jpg" alt="">
+          </div>
+          <div class="col">
+            <h2>Memberikan Edukasi yang Menarik </h2>
+            <p class="teks">Fitur edukasi yang membantu pengguna menjadi lebih mengerti tentang pengelolaan
+              keuangan
+              yang baik dan benar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="konten">
+    <div class="konten3">
+      <img class="poto1" src="assets/konten4.jpg" alt="">
+      <img class="poto2" src="assets/konten5.jpg" alt="">
+      <img class="poto3" src="assets/konten6.jpg" alt="">
+    </div>
+    <div class="konten4">
+      <img class="poto4" src="assets/konten7.jpg" alt="">
+      <img class="poto5" src="assets/konten8.jpeg" alt="">
+      <img class="poto6" src="assets/konten9.jpeg" alt="">
+    </div>
+  </div>
+
+  <div class="kata">
+    <h2>“Membantu Mengoptimalkan Pengelolaan Keuangan Anda”</h2>
+  </div>
+
+  <div class="footer">
+    <h5 class="card-title">SMARTMONEY<br> &copy; 2023 SmartMoney</h5>
+
+
+    <div class="social-icons">
+      <a href="#" class="social-icon">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fa-brands fa-square-facebook" style="color: #7dc2d9;"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fa-brands fa-linkedin" style="color: #7dc2d9;"></i>
+      </a>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+  <!-- /script boostrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

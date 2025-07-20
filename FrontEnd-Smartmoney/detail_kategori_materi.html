@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMARTMONEY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/44e15b7060.js" crossorigin="anonymous"></script>
+  <style>
+    /* margin, padding keseluruhan page */
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    /* bagian foto background */
+    .main {
+      width: 100%;
+      height: 700px;
+      background: linear-gradient(rgba(40, 67, 94, 0.6), rgba(40, 67, 94, 0.6)), url("assets/edukasi.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* bagian tulisan logo */
+    .logo {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 1%;
+      margin-bottom: 1%;
+      font-weight: bold;
+    }
+
+    /* bagian posisi tulisan navbar */
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    /* bagian editing tulisan navbar */
+    .navbar ul li a {
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .button1 {
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 30px;
+      transition: .5s;
+      background-color: #203652;
+    }
+
+    .button2 {
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 5px 15px;
+      border-radius: 30px;
+      transition: .5s;
+      background-color: #203652;
+    }
+
+    /* bagian icon */
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    /* bagian judul */
+    /* bagian judul */
+    .judul {
+      display: flex;
+      flex-direction: column;
+      /* Untuk menempatkan <h1> dan <p> secara vertikal */
+      align-items: flex-end;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-right: 10%;
+      margin-top: 8%;
+      text-align: right;
+      /* Untuk mengatur teks ke kanan */
+    }
+
+    .judul h1 {
+      font-size: 50pt;
+      font-weight: bolder;
+    }
+
+    .judul p {
+      font-size: 20pt;
+      position: relative;
+    }
+
+    .judul {
+      display: flex;
+      flex-direction: column;
+      /* Untuk menempatkan <h1> dan <p> secara vertikal */
+      align-items: flex-end;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 20%;
+      margin-top: 9%;
+      text-align: right;
+      /* Untuk mengatur teks ke kanan */
+    }
+
+    .judul h1 {
+      color: white;
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 50pt;
+      margin-right: 10%;
+      margin-top: 1%;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    .konten1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+      width: 85%;
+      margin: auto;
+      padding: 45px 0;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+
+
+    .isi img {
+      width: 500px;
+      height: 300px;
+      border-radius: 10%;
+      flex: 1;
+      float: right;
+      margin-right: 5%;
+      margin-left: 50px;
+      margin-top: -1%;
+      float: left;
+    }
+
+    /* format tulisan bagian isi */
+    .teks-container p {
+      margin-top: 8%;
+      font-size: 16pt;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      border: 1px solid none;
+      padding: 2px;
+      margin-right: 50px;
+      color: black;
+      top: auto;
+    }
+
+    .teks-container h1 {
+      margin-top: 3%;
+      font-size: 15pt;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      border: 1px solid none;
+      padding: 2px;
+      margin-right: 50px;
+      color: black;
+      top: auto;
+      margin-left: 70px;
+    }
+
+    .teks-container h2,
+    h3,
+    h4 {
+      margin-top: 2%;
+      font-size: 15pt;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      border: 1px solid none;
+      padding: 2px;
+      margin-right: 50px;
+      color: black;
+      top: auto;
+      margin-left: 70px;
+    }
+
+    .video {
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+    }
+
+    .m h1 {
+      margin-top: 5%;
+      font-size: 24pt;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      border: 1px solid none;
+      padding: 2px;
+      color: black;
+      top: auto;
+      margin-left: 70px;
+      font-weight: bolder;
+    }
+
+    .m p {
+      margin-left: 17%;
+      margin-top: 1%;
+    }
+
+    .buttonn2 {
+      margin-left: 17%;
+      margin-top: 1%;
+    }
+
+    .kata .jdl p {
+      margin-top: 6%;
+      margin-bottom: 3%;
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bolder;
+    }
+
+    /* bagian footer */
+    .footer {
+      width: 100%;
+      margin-top: 5%;
+      background-color: #203652;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+
+<body>
+  <!-- bagian navbar & main background -->
+  <div class="main">
+    <div class="navbar">
+      <label class="logo">SMARTMONEY</label>
+      <ul>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="edukasi.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookkeeping.html">Bookkeeping</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+      <div class="button">
+        <a href="login.html"><button class="button1">Login</button></a>
+        <a href="register.html"><button class="button2">SignUp</button></a>
+      </div>
+      <div class="icon">
+        <a href="setting.html"><i class="fa-regular fa-user" style="color: #ffffff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- bagian judul -->
+    <div class="judul">
+      <h1>Konsep Dasar Pengelolaan Keuangan Pribadi</h1>
+    </div>
+  </div>
+
+  <!-- bagian isi -->
+  <div class="isi">
+    <div class="katMateri">
+      <div class="gambar-container">
+        <img src="assets/konsep.png">
+      </div>
+      <div class="teks-container">
+        <p> Konsep dasar manajemen keuangan bisa berfungsi sebagai “pemandu” bagi kamu yang ingin mengelola aktivitas
+          keuangan secara efektif dan efisien. Dalam artikel ini, akan dibahas tentang 10 konsep dasar manajemen
+          keuangan serta beberapa contoh dan ilustrasi praktisnya dalam kehidupan kamu sehari-hari dikutip dari Pintu
+          Academy.
+          Manajemen keuangan pribadi adalah keterampilan yang penting untuk mencapai stabilitas finansial dan mencapai
+          tujuan keuangan Anda. Dengan memahami dasar-dasar ini dan menjalankannya secara konsisten, Anda dapat
+          mengendalikan keuangan Anda dengan lebih baik.</p>
+        <h1>Konsep Dasar Pengelolaan Keuangan Pribadi</h1>
+        <h2>1. mengatur keuangan <br></h2>
+        <h2>Kesuksesan finansial diawali dengan mengatur keuangan. Mulailah dengan melacak seluruh sumber dan aktivitas
+          keuangan Anda, baik yang bernilai besar maupun kecil. Rekening bank, kartu kredit, pinjaman pribadi, dan
+          lainnya harus bisa dilacak transaksinya.
+          Teknologi yang berkembang saat ini memungkinkan Anda untuk bisa melacak setiap transaksi keuangan dengan lebih
+          mudah. Banyak aplikasi yang dapat dipilih dan digunakan untuk membantu dalam menyusun anggaran dan melacak
+          pengeluaran pribadi Anda. Misalnya penyusunan anggaran belanja, pengeluaran bulanan dan harian, pembayaran
+          tagihan tepat waktu, dan lain sebagainya. Dengan aplikasi keuangan yang dapat diinstal di ponsel pintar, Anda
+          dapat lebih mudah mengorganisir setiap pemasukan dan pengeluaran secara lebih efektif dan efisien.</h2>
+        <h3>2. Susun anggaran dan patuhi<br></h3>
+        <h3>Kebanyakan orang gagal dalam mengelola keuangan karena tidak patuh anggaran. Apa gunanya menyusun anggaran
+          jika tidak direalisasikan? Tentu saja, pengelolaan keuangan akan sulit dikontrol dan dikendalikan. Anda akan
+          terbawa arus dan terlena dalam pemborosan. Setelah kantong menipis bahkan kosong, menyesal kemudian tentu
+          sudah tak ada gunanya lagi.
+          Untuk meningkatkan keuangan pribadi, Anda harus bertindak sesuai dengan rencana keuangan yang telah disusun.
+          Kelola dan kendalikan setiap keinginan dalam diri yang mendorong Anda untuk bersikap konsumtif. Motivasi diri
+          Anda sendiri bahwa untuk mencapai kesuksesan finansial dibutuhkan kesabaran. Dengan begitu, Anda dapat lebih
+          berhati-hati dalam mengalokasikan uang, apalagi untuk hal-hal yang sebenarnya tidak dibutuhkan.
+          Rencanakan pengeluaran harian Anda. Mulai dari apa yang dibutuhkan hari ini hingga apa yang akan dilakukan,
+          sehingga Anda bisa menyusun anggaran keuangan secara efisien. Sebagai pengingat, Anda bisa menempelkan
+          anggaran tersebut di tempat yang bisa Anda lihat setiap hari. Dengan demikian, Anda akan lebih terdorong untuk
+          merealisasikannya dibandingkan jika Anda hanya membuat catatan dan menyimpannya rapi dalam laci meja kerja
+          Anda.</h3>
+        <h4>3. Pahami dan bedakan antara kebutuhan dengan keinginan <br></h4>
+        <h4>Banyak orang terjebak dalam pusaran keinginan yang tak berujung dengan dalih kebutuhan. Keterbatasan dalam
+          memahami kebutuhan dan keinginan sering kali menjadi jebakan yang berbahaya bagi kesehatan keuangan. Pada
+          dasarnya kebutuhan dengan keinginan merupakan dua hal yang berbeda, namun sering kali dianggap </h4>
+
+      </div>
+    </div>
+
+
+    <!-- bagian video -->
+    <div class="m">
+      <h1>Video</h1>
+      <div class="video">
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/qbgcFocUDVw?si=Aos5GSuhE_F0i30s"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <p><b>Top Brain Expert: "Do This For A Super Memory"</b></p>
+      <p>Speed-Learning Lessons From A Boy With A “Broken” Brain</p>
+      <div class="buttonn2">
+        <button class="btn btn-primary">Selengkapnya</button>
+      </div>
+    </div>
+
+
+
+    <div class="footer">
+      <h5 class="card-title">SMARTMONEY<br> &copy; 2023 SmartMoney</h5>
+
+
+      <div class="social-icons">
+        <a href="#" class="social-icon">
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fa-brands fa-square-facebook" style="color: #7dc2d9;"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fa-brands fa-linkedin" style="color: #7dc2d9;"></i>
+        </a>
+
+
+
+        <!-- /script boostrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
