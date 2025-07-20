@@ -136,7 +136,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="img/Avatar.png" alt="Avatar 1" />
+                            <img src="/img/Avatar.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">Catalog</span>
@@ -152,7 +152,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="img/Avatars-1.png" alt="Users" />
+                        <img src="/img/Avatars-1.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Content curating app</span>
@@ -165,7 +165,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="img/Avatar-1.png" alt="Avatar 1" />
+                            <img src="/img/Avatar-1.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">
