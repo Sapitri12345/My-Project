@@ -7,7 +7,7 @@ function Login() {
         <div className="grid grid-cols-2">
           <div className="bg-[#7A51E3] p-20 border-r-2 border-b-2 border-[#7A51E3]">
             <form action="/admin/dashboard" method="postX">
-              <img src="/src/img/Logo.png" alt="Logo" className="mx-auto" />
+              <img src="img/Logo.png" alt="Logo" className="mx-auto" />
               <h1 className="font-extrabold mb-5 mt-3 text-3xl text-center text-white">
                 Lapak Event
               </h1>
@@ -63,7 +63,7 @@ function Login() {
           </div>
           <div className="text-center">
             <img
-              src="/src/img/image-login.png"
+              src="img/image-login.png"
               alt="Image Login"
               className="mx-auto"
             />
@@ -71,7 +71,7 @@ function Login() {
         </div>
       </div>
       <div id="root"></div>
-      <script type="module" src="/src/main.jsx"></script>
+      <script type="module" src="main.jsx"></script>
     </div>
   );
 }

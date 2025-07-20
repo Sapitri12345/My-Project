@@ -83,7 +83,7 @@ const Promo = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/promo.png"
+                          src="img/promo.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -128,7 +128,7 @@ const Promo = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/promo.png"
+                          src="img/promo.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -173,7 +173,7 @@ const Promo = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/promo.png"
+                          src="img/promo.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -218,7 +218,7 @@ const Promo = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/promo.png"
+                          src="img/promo.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -263,7 +263,7 @@ const Promo = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/promo.png"
+                          src="img/promo.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -366,7 +366,7 @@ const Promo = () => {
                             <i className="fa fa-close"></i>
                           </button>
                         </div>
-                        <img src="/src/img/promo.png" alt="Produk" />
+                        <img src="img/promo.png" alt="Produk" />
                       </div>
                       <div className="mt-4">
                         <label

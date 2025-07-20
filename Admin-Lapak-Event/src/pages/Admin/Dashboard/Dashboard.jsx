@@ -136,7 +136,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar.png" alt="Avatar 1" />
+                            <img src="img/Avatar.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">Catalog</span>
@@ -152,7 +152,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-1.png" alt="Users" />
+                        <img src="img/Avatars-1.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Content curating app</span>
@@ -165,7 +165,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar-1.png" alt="Avatar 1" />
+                            <img src="img/Avatar-1.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">
@@ -183,7 +183,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-2.png" alt="Users" />
+                        <img src="img/Avatars-2.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Design software</span>
@@ -196,7 +196,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar-2.png" alt="Avatar 1" />
+                            <img src="img/Avatar-2.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">
@@ -214,7 +214,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-3.png" alt="Users" />
+                        <img src="img/Avatars-3.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Data prediction</span>
@@ -227,7 +227,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar-3.png" alt="Avatar 1" />
+                            <img src="img/Avatar-3.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">Layers</span>
@@ -243,7 +243,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-4.png" alt="Users" />
+                        <img src="img/Avatars-4.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Productivity app</span>
@@ -256,7 +256,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar-4.png" alt="Avatar 1" />
+                            <img src="img/Avatar-4.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">
@@ -274,7 +274,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-5.png" alt="Users" />
+                        <img src="img/Avatars-5.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Web app integrations</span>
@@ -287,7 +287,7 @@ function Admin() {
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap">
                           <div className="mr-2">
-                            <img src="/src/img/Avatar-5.png" alt="Avatar 1" />
+                            <img src="img/Avatar-5.png" alt="Avatar 1" />
                           </div>
                           <div className="w">
                             <span className="block font-semibold">
@@ -305,7 +305,7 @@ function Admin() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <img src="/src/img/Avatars-6.png" alt="Users" />
+                        <img src="img/Avatars-6.png" alt="Users" />
                       </td>
                       <td className="px-6 py-4">
                         <span className="block">Sales CRM</span>

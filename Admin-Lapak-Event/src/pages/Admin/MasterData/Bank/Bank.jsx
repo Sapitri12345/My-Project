@@ -76,7 +76,7 @@ const Bank = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/bri.png"
+                          src="img/bri.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -110,7 +110,7 @@ const Bank = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/bni.png"
+                          src="img/bni.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -144,7 +144,7 @@ const Bank = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/bsi.png"
+                          src="img/bsi.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -178,7 +178,7 @@ const Bank = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/mnd.png"
+                          src="img/mnd.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -212,7 +212,7 @@ const Bank = () => {
                       </td>
                       <td className="text-center px-6 py-4">
                         <img
-                          src="/src/img/bca.png"
+                          src="img/bca.png"
                           alt="Users"
                           className=" mx-auto"
                         />
@@ -305,7 +305,7 @@ const Bank = () => {
                             <i className="fa fa-close"></i>
                           </button>
                         </div>
-                        <img src="/src/img/bri.png" alt="Produk" />
+                        <img src="img/bri.png" alt="Produk" />
                       </div>
                       <div className="mt-4">
                         <label
