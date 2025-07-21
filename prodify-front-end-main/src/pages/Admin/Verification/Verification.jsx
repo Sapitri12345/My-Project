@@ -1,5 +1,5 @@
 import React from "react";
-import gambar10 from "../../../img/gambar10.png";
+// import gambar10 from "../../../img/gambar10.png";
 
 function Verification() {
   return (
